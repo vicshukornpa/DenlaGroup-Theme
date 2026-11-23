@@ -1,0 +1,76 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "meta": {
+    "name": "DenlaGroup-Theme",
+    "version": "1.0.0",
+    "description": "Centralized Frontend Design System for Denla Group (DBS & Denla Group web applications)"
+  },
+  "color": {
+    "brand": {
+      "navy": { "value": "#0f2c59", "description": "Primary brand color (headers, footers, headings, focus states)" },
+      "navyDark": { "value": "#0a1f40", "description": "Deep navy for hover/active states" },
+      "blue": { "value": "#1d4ed8", "description": "Hero gradient end / vibrant accent blue" },
+      "blueAccent": { "value": "#1740a5", "description": "Highlight banner / moderator card background" },
+      "gold": { "value": "#B89047", "description": "Primary accent (CTA buttons, active tab underline, section dividers)" },
+      "goldLight": { "value": "#dfc08a", "description": "Highlighted text & icons on dark navy backgrounds" },
+      "goldDark": { "value": "#936e2f", "description": "Hover state for gold CTA buttons" }
+    },
+    "neutral": {
+      "bg": { "value": "#f8fafc", "description": "Page canvas background (Slate 50)" },
+      "surface": { "value": "#ffffff", "description": "Card & navbar surface" },
+      "border": { "value": "#e2e8f0", "description": "Standard subtle border (Slate 200)" },
+      "borderLight": { "value": "#f1f5f9", "description": "Navbar / card hairline border (Slate 100)" },
+      "inputBorder": { "value": "#cbd5e1", "description": "Form input default border (Slate 300)" },
+      "textPrimary": { "value": "#1e293b", "description": "Primary body copy (Slate 800)" },
+      "textSecondary": { "value": "#475569", "description": "Secondary body copy (Slate 600)" },
+      "textMuted": { "value": "#64748b", "description": "Captions, labels, inactive tabs (Slate 500)" }
+    },
+    "surface": {
+      "softBlueStart": { "value": "#b7cbe3", "description": "Soft highlight card gradient start" },
+      "softBlueEnd": { "value": "#c2d9e7", "description": "Soft highlight card gradient end" },
+      "softBlueBorder": { "value": "#a8c1db", "description": "Soft highlight card border" }
+    },
+    "semantic": {
+      "success": { "value": "#16a34a" },
+      "warning": { "value": "#d97706" },
+      "danger": { "value": "#dc2626" },
+      "info": { "value": "#2563eb" }
+    }
+  },
+  "gradient": {
+    "hero": { "value": "linear-gradient(135deg, #0f2c59 0%, #1d4ed8 100%)" },
+    "softBlue": { "value": "linear-gradient(135deg, #b7cbe3 0%, #c2d9e7 100%)" },
+    "gold": { "value": "linear-gradient(135deg, #B89047 0%, #936e2f 100%)" }
+  },
+  "typography": {
+    "fontFamily": {
+      "sans": { "value": "'Prompt', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" }
+    },
+    "googleFontsUrl": {
+      "value": "https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap"
+    },
+    "weights": {
+      "light": 300,
+      "regular": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700
+    }
+  },
+  "radius": {
+    "input": { "value": "0.5rem" },
+    "card": { "value": "1rem" },
+    "section": { "value": "1.5rem" },
+    "pill": { "value": "9999px" }
+  },
+  "shadow": {
+    "premium": { "value": "0 10px 30px -10px rgba(15, 44, 89, 0.08)" },
+    "focusRing": { "value": "0 0 0 3px rgba(15, 44, 89, 0.15)" },
+    "cta": { "value": "0 10px 15px -3px rgba(15, 44, 89, 0.15), 0 4px 6px -4px rgba(15, 44, 89, 0.1)" }
+  },
+  "layout": {
+    "maxWidth": { "value": "80rem", "description": "max-w-7xl (1280px)" },
+    "headerHeight": { "value": "5rem", "description": "h-20 (80px)" },
+    "sectionGap": { "value": "3rem", "description": "space-y-12 (48px)" }
+  }
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Denla Group — Starter App</title>
+
+  <!--
+    DenlaGroup-Theme CDN Setup
+    Replace BASE_URL with your Cloudflare Pages/Worker URL or jsDelivr GitHub URL:
+      - Cloudflare: https://denlagroup-theme.pages.dev
+      - GitHub CDN: https://cdn.jsdelivr.net/gh/vicshukornpa/DenlaGroup-Theme@v1.0.0/dist
+  -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://denlagroup-theme.pages.dev/denla-tailwind-cdn.js"></script>
+  <link rel="stylesheet" href="https://denlagroup-theme.pages.dev/denla-theme.css">
+</head>
+<body class="denla-theme min-h-screen flex flex-col justify-between">
+  <div>
+    <!-- Sticky Header -->
+    <header class="denla-header">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <div class="flex items-center gap-3 cursor-pointer" onclick="switchTab('home')">
+            <div class="h-10 w-10 rounded-xl bg-denla-navy text-denla-goldlight flex items-center justify-center font-bold text-lg shadow-sm">
+              DG
+            </div>
+            <div class="hidden sm:flex flex-col justify-center border-l border-slate-200 pl-3.5">
+              <h1 class="text-lg font-bold text-denla-navy leading-tight tracking-tight">Denla Group Portal</h1>
+              <span class="text-[9px] font-bold text-denla-gold uppercase tracking-widest mt-0.5">BY DENLA GROUP</span>
+            </div>
+          </div>
+
+          <nav class="flex space-x-1 sm:space-x-4">
+            <button id="btn-home" onclick="switchTab('home', this)" class="tab-btn denla-tab-active px-3 py-2 text-xs sm:text-sm font-semibold text-slate-500 hover:text-denla-navy rounded-lg transition">
+              หน้าหลัก / Home
+            </button>
+            <button id="btn-form" onclick="switchTab('form', this)" class="tab-btn px-3 py-2 text-xs sm:text-sm font-semibold text-slate-500 hover:text-denla-navy rounded-lg transition">
+              แบบฟอร์ม / Form
+            </button>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+      <!-- Tab: Home -->
+      <section id="tab-home" class="tab-content space-y-12">
+        <!-- Hero Banner -->
+        <div class="relative rounded-3xl overflow-hidden denla-hero py-16 px-8 md:px-12 denla-shadow-premium">
+          <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-20 -mt-20 blur-2xl"></div>
+          <div class="absolute bottom-0 left-0 w-80 h-80 bg-denla-gold/10 rounded-full -ml-32 -mb-32 blur-3xl"></div>
+
+          <div class="relative max-w-4xl mx-auto text-center space-y-6">
+            <div class="denla-badge denla-badge-glass">
+              <span class="w-2 h-2 rounded-full bg-denla-gold animate-pulse"></span>
+              Denla Group Standard
+            </div>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
+              Denla <span class="text-denla-goldlight">Web Application</span>
+            </h1>
+            <p class="text-lg md:text-xl font-light max-w-2xl mx-auto text-slate-100 leading-relaxed">
+              โครงสร้างหน้าเว็บมาตรฐานส่วนกลางสำหรับทุกแอปพลิเคชันในเครือ Denla Group
+            </p>
+            <div class="pt-4">
+              <button onclick="switchTab('form')" class="denla-btn-primary">
+                เริ่มต้นใช้งาน / Get Started
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- White Content Card -->
+        <div class="denla-card p-8 md:p-12 max-w-4xl mx-auto text-center space-y-4">
+          <h2 class="text-2xl md:text-3xl font-bold text-denla-navy">หัวข้อเนื้อหาหลัก</h2>
+          <div class="denla-divider mx-auto"></div>
+          <p class="text-slate-600 leading-relaxed">
+            ใช้พื้นหลังสีขาว มุมโค้ง <code>rounded-3xl</code> และเงา <code>denla-shadow-premium</code> เพื่อความสะอาดตาและอ่านง่าย
+          </p>
+        </div>
+      </section>
+
+      <!-- Tab: Form -->
+      <section id="tab-form" class="tab-content hidden">
+        <div class="denla-card p-8 md:p-10 max-w-2xl mx-auto space-y-6">
+          <div class="text-center space-y-2">
+            <h2 class="text-2xl font-bold text-denla-navy">แบบฟอร์มข้อมูล</h2>
+            <div class="denla-divider mx-auto"></div>
+          </div>
+          <form class="space-y-4" onsubmit="event.preventDefault(); alert('Submitted!');">
+            <div>
+              <label class="block text-sm font-semibold text-denla-navy mb-1.5">ชื่อ-นามสกุล</label>
+              <input type="text" class="denla-input" placeholder="กรอกชื่อ-นามสกุล" required>
+            </div>
+            <div>
+              <label class="block text-sm font-semibold text-denla-navy mb-1.5">อีเมล</label>
+              <input type="email" class="denla-input" placeholder="name@denlagroup.com" required>
+            </div>
+            <div class="pt-2 text-right">
+              <button type="submit" class="denla-btn-primary">บันทึกข้อมูล</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="denla-footer py-10 mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-slate-300">
+      &copy; Denla Group. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    function switchTab(tabId, btn) {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('denla-tab-active'));
+      document.querySelectorAll('.tab-content').forEach(c => c.classList.add('hidden'));
+      const target = document.getElementById('tab-' + tabId);
+      if (target) target.classList.remove('hidden');
+      const active = btn || document.getElementById('btn-' + tabId);
+      if (active) active.classList.add('denla-tab-active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>

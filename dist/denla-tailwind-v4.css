@@ -1,0 +1,38 @@
+/**
+ * DenlaGroup-Theme — Tailwind CSS v4 @theme definition
+ * Version: 1.0.0
+ *
+ * Usage in Tailwind v4 (Next.js 15+, Vite, Astro):
+ *   @import "tailwindcss";
+ *   @import "denlagroup-theme/tailwind-v4";
+ */
+
+@import url('./denla-tokens.css');
+
+@theme {
+  --font-sans: 'Prompt', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Denla Group Palette (`bg-denla-navy`, `text-denla-gold`, etc.) */
+  --color-denla-navy: #0f2c59;
+  --color-denla-navydark: #0a1f40;
+  --color-denla-blue: #1d4ed8;
+  --color-denla-blueaccent: #1740a5;
+  --color-denla-gold: #B89047;
+  --color-denla-goldlight: #dfc08a;
+  --color-denla-golddark: #936e2f;
+  --color-denla-bg: #f8fafc;
+  --color-denla-slate: #1e293b;
+  --color-denla-softblue: #b7cbe3;
+  --color-denla-softbluelight: #c2d9e7;
+
+  /* Legacy DBS Alias (`bg-dbs-navy`, `text-dbs-gold`, etc.) */
+  --color-dbs-navy: #0f2c59;
+  --color-dbs-gold: #B89047;
+  --color-dbs-goldlight: #dfc08a;
+  --color-dbs-golddark: #936e2f;
+  --color-dbs-bg: #f8fafc;
+  --color-dbs-slate: #1e293b;
+
+  /* Shadows */
+  --shadow-premium: 0 10px 30px -10px rgba(15, 44, 89, 0.08);
+}

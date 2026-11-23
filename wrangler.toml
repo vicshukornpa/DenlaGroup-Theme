@@ -1,0 +1,12 @@
+# Cloudflare Pages / Workers Static Assets configuration
+# Deploy to Cloudflare Pages:
+#   npx wrangler pages deploy dist --project-name=denlagroup-theme
+#
+# Or deploy as a Cloudflare Worker with static assets:
+#   npx wrangler deploy
+
+name = "denlagroup-theme"
+compatibility_date = "2026-01-01"
+
+[assets]
+directory = "./dist"

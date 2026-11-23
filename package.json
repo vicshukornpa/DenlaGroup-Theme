@@ -1,0 +1,35 @@
+{
+  "name": "denlagroup-theme",
+  "version": "1.0.0",
+  "description": "Centralized Frontend Design System & Theme for Denla Group web applications (Apps Script, Static HTML, React, Next.js, Vue, Vite)",
+  "main": "./packages/tailwind-preset.js",
+  "exports": {
+    ".": "./dist/denla-theme.css",
+    "./tokens": "./dist/denla-tokens.css",
+    "./tokens.json": "./tokens/design-tokens.json",
+    "./theme.css": "./dist/denla-theme.css",
+    "./tailwind-preset": "./packages/tailwind-preset.js",
+    "./tailwind-v4": "./dist/denla-tailwind-v4.css",
+    "./tailwind-cdn": "./dist/denla-tailwind-cdn.js"
+  },
+  "files": [
+    "dist",
+    "packages",
+    "tokens",
+    "templates",
+    "DESIGN_SYSTEM.md"
+  ],
+  "scripts": {
+    "preview": "npx serve dist",
+    "deploy:cf-pages": "npx wrangler pages deploy dist --project-name=denlagroup-theme",
+    "deploy:cf-worker": "npx wrangler deploy"
+  },
+  "keywords": [
+    "denla-group",
+    "design-system",
+    "tailwind-preset",
+    "theme",
+    "css-tokens"
+  ],
+  "license": "MIT"
+}

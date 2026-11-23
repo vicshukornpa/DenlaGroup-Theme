@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DenlaGroup-Theme — Centralized Design System Showcase</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./denla-tailwind-cdn.js"></script>
+  <link rel="stylesheet" href="./denla-theme.css">
+</head>
+<body class="denla-theme min-h-screen flex flex-col justify-between">
+  <div>
+    <!-- Header -->
+    <header class="denla-header">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <div class="flex items-center gap-3">
+            <div class="h-10 w-10 rounded-xl bg-denla-navy text-denla-goldlight flex items-center justify-center font-bold text-lg shadow-sm">
+              DG
+            </div>
+            <div class="flex flex-col justify-center border-l border-slate-200 pl-3.5">
+              <h1 class="text-lg font-bold text-denla-navy leading-tight tracking-tight">DenlaGroup-Theme</h1>
+              <span class="text-[9px] font-bold text-denla-gold uppercase tracking-widest mt-0.5">CENTRAL DESIGN SYSTEM v1.0</span>
+            </div>
+          </div>
+          <nav class="flex space-x-2 sm:space-x-4 text-xs sm:text-sm font-semibold">
+            <a href="#colors" class="px-3 py-2 text-slate-500 hover:text-denla-navy">Colors</a>
+            <a href="#components" class="px-3 py-2 text-slate-500 hover:text-denla-navy">Components</a>
+            <a href="#usage" class="px-3 py-2 denla-tab-active">Usage</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 space-y-12">
+      <!-- Hero Showcase -->
+      <section class="relative rounded-3xl overflow-hidden denla-hero py-14 px-8 md:px-12 denla-shadow-premium">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-20 -mt-20 blur-2xl"></div>
+        <div class="absolute bottom-0 left-0 w-80 h-80 bg-denla-gold/10 rounded-full -ml-32 -mb-32 blur-3xl"></div>
+        <div class="relative max-w-4xl mx-auto text-center space-y-5">
+          <div class="denla-badge denla-badge-glass">
+            <span class="w-2 h-2 rounded-full bg-denla-gold animate-pulse"></span>
+            Executive Navy &amp; Gold • Prompt Font
+          </div>
+          <h1 class="text-4xl md:text-5xl font-bold tracking-tight">
+            DenlaGroup <span class="text-denla-goldlight">Design System</span>
+          </h1>
+          <p class="text-base md:text-lg font-light max-w-2xl mx-auto text-slate-100 leading-relaxed">
+            มาตรฐาน UI ส่วนกลางสำหรับ Google Apps Script, Static HTML, React, Next.js และ Vue
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4 max-w-3xl mx-auto">
+            <div class="denla-glass p-4 text-center">
+              <div class="text-xs text-slate-300">CSS Tokens</div>
+              <div class="font-semibold text-base mt-1 text-denla-goldlight">denla-tokens.css</div>
+            </div>
+            <div class="denla-glass p-4 text-center">
+              <div class="text-xs text-slate-300">Theme &amp; Components</div>
+              <div class="font-semibold text-base mt-1 text-denla-goldlight">denla-theme.css</div>
+            </div>
+            <div class="denla-glass p-4 text-center">
+              <div class="text-xs text-slate-300">Tailwind Preset</div>
+              <div class="font-semibold text-base mt-1 text-denla-goldlight">CDN / v3 / v4</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Color Palette -->
+      <section id="colors" class="space-y-6">
+        <div class="text-center space-y-2">
+          <h2 class="text-2xl md:text-3xl font-bold text-denla-navy">Color Palette</h2>
+          <div class="denla-divider mx-auto"></div>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-4">
+          <div class="bg-white rounded-2xl p-3 border border-slate-100 shadow-sm">
+            <div class="h-16 rounded-xl bg-denla-navy"></div>
+            <p class="font-semibold text-sm mt-2 text-denla-navy">Navy</p>
+            <p class="text-xs text-slate-500">#0f2c59</p>
+          </div>
+          <div class="bg-white rounded-2xl p-3 border border-slate-100 shadow-sm">
+            <div class="h-16 rounded-xl bg-denla-blue"></div>
+            <p class="font-semibold text-sm mt-2 text-denla-navy">Blue</p>
+            <p class="text-xs text-slate-500">#1d4ed8</p>
+          </div>
+          <div class="bg-white rounded-2xl p-3 border border-slate-100 shadow-sm">
+            <div class="h-16 rounded-xl bg-denla-gold"></div>
+            <p class="font-semibold text-sm mt-2 text-denla-navy">Gold</p>
+            <p class="text-xs text-slate-500">#B89047</p>
+          </div>
+          <div class="bg-white rounded-2xl p-3 border border-slate-100 shadow-sm">
+            <div class="h-16 rounded-xl bg-denla-goldlight"></div>
+            <p class="font-semibold text-sm mt-2 text-denla-navy">Gold Light</p>
+            <p class="text-xs text-slate-500">#dfc08a</p>
+          </div>
+          <div class="bg-white rounded-2xl p-3 border border-slate-100 shadow-sm">
+            <div class="h-16 rounded-xl bg-denla-golddark"></div>
+            <p class="font-semibold text-sm mt-2 text-denla-navy">Gold Dark</p>
+            <p class="text-xs text-slate-500">#936e2f</p>
+          </div>
+          <div class="bg-white rounded-2xl p-3 border border-slate-100 shadow-sm">
+            <div class="h-16 rounded-xl bg-denla-slate"></div>
+            <p class="font-semibold text-sm mt-2 text-denla-navy">Slate</p>
+            <p class="text-xs text-slate-500">#1e293b</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Components -->
+      <section id="components" class="space-y-6">
+        <div class="text-center space-y-2">
+          <h2 class="text-2xl md:text-3xl font-bold text-denla-navy">UI Components</h2>
+          <div class="denla-divider mx-auto"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Buttons & Badges -->
+          <div class="denla-card p-8 space-y-5">
+            <h3 class="text-lg font-bold text-denla-navy">Buttons</h3>
+            <div class="flex flex-wrap gap-3">
+              <button class="denla-btn-primary">Primary Gold CTA</button>
+              <button class="denla-btn-navy">Navy Action</button>
+              <button class="denla-btn-outline">Outline Button</button>
+            </div>
+            <h3 class="text-lg font-bold text-denla-navy pt-2">Form Input</h3>
+            <input type="text" class="denla-input" placeholder="ตัวอย่างช่องกรอกข้อมูล (.denla-input)">
+          </div>
+
+          <!-- Soft Highlight Card -->
+          <div class="denla-card-soft p-8 flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="w-10 h-10 bg-white/95 text-denla-navy rounded-xl flex items-center justify-center font-bold text-lg shadow-sm">1</div>
+              <h3 class="text-xl font-bold text-denla-navy">Soft Highlight Card</h3>
+              <p class="text-sm text-slate-700 leading-relaxed">
+                ใช้คลาส <code>.denla-card-soft</code> สำหรับการ์ดรายการสำคัญ เช่น Session, เมนูหลัก, หรือ KPI Summary
+              </p>
+            </div>
+            <div class="border-t border-[#a6bfd9]/60 mt-6 pt-3 text-xs text-denla-navy/70 font-medium">
+              Hover เพื่อดู Micro-interaction lift
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quick Usage -->
+      <section id="usage" class="denla-card p-8 space-y-4">
+        <h2 class="text-2xl font-bold text-denla-navy">Quick CDN Integration</h2>
+        <div class="denla-divider"></div>
+        <pre class="bg-slate-900 text-slate-100 rounded-2xl p-5 text-xs sm:text-sm overflow-x-auto"><code>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;
+&lt;script src="https://denlagroup-theme.pages.dev/denla-tailwind-cdn.js"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" href="https://denlagroup-theme.pages.dev/denla-theme.css"&gt;</code></pre>
+      </section>
+    </main>
+  </div>
+
+  <footer class="denla-footer py-8 mt-12">
+    <div class="max-w-7xl mx-auto px-4 text-center text-sm text-slate-300">
+      DenlaGroup-Theme v1.0.0 — Centralized Frontend Design System
+    </div>
+  </footer>
+</body>
+</html>
