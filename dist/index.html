@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DenlaGroup-Theme — Centralized Design System Showcase</title>
+  <link rel="icon" type="image/png" href="./assets/dbs-favicon.png">
+  <link rel="apple-touch-icon" href="./assets/dbs-favicon-192.png">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="./denla-tailwind-cdn.js"></script>
   <link rel="stylesheet" href="./denla-theme.css">
@@ -14,13 +16,11 @@
     <header class="denla-header">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-20">
-          <div class="flex items-center gap-3">
-            <div class="h-10 w-10 rounded-xl bg-denla-navy text-denla-goldlight flex items-center justify-center font-bold text-lg shadow-sm">
-              DG
-            </div>
+          <div class="flex items-center gap-3.5">
+            <img src="./assets/denla-group-logo.png" alt="Denla Group Logo" class="h-10 sm:h-11 w-auto object-contain">
             <div class="flex flex-col justify-center border-l border-slate-200 pl-3.5">
               <h1 class="text-lg font-bold text-denla-navy leading-tight tracking-tight">DenlaGroup-Theme</h1>
-              <span class="text-[9px] font-bold text-denla-gold uppercase tracking-widest mt-0.5">CENTRAL DESIGN SYSTEM v1.0</span>
+              <span class="text-[9px] font-bold text-denla-gold uppercase tracking-widest mt-0.5">CENTRAL DESIGN SYSTEM v1.1</span>
             </div>
           </div>
           <nav class="flex space-x-2 sm:space-x-4 text-xs sm:text-sm font-semibold">
@@ -140,20 +140,48 @@
         </div>
       </section>
 
+      <!-- Brand Logos & Favicons -->
+      <section id="assets" class="denla-card p-8 space-y-6">
+        <div>
+          <h2 class="text-2xl font-bold text-denla-navy">Brand Icons &amp; Favicons Standard</h2>
+          <div class="denla-divider mt-2"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="rounded-2xl border border-slate-200 p-6 text-center space-y-3 bg-slate-50">
+            <img src="./assets/denla-group-logo.png" alt="Denla Group Logo" class="h-14 mx-auto object-contain">
+            <p class="font-bold text-sm text-denla-navy">Denla Group Icon (Navbar / Login)</p>
+            <code class="block text-[11px] text-slate-500 break-all">assets/denla-group-logo.png</code>
+          </div>
+          <div class="rounded-2xl border border-slate-200 p-6 text-center space-y-3 bg-denla-navy text-white">
+            <img src="./assets/denla-group-logo.png" alt="Denla Group White Logo" class="denla-logo-white h-14 mx-auto">
+            <p class="font-bold text-sm text-denla-goldlight">Denla Group White (Footer)</p>
+            <code class="block text-[11px] text-slate-300">.denla-logo-white</code>
+          </div>
+          <div class="rounded-2xl border border-slate-200 p-6 text-center space-y-3 bg-slate-50">
+            <img src="./assets/dbs-favicon.png" alt="Denla British School Favicon" class="h-14 w-14 mx-auto object-contain">
+            <p class="font-bold text-sm text-denla-navy">Denla British School Favicon</p>
+            <code class="block text-[11px] text-slate-500 break-all">assets/dbs-favicon.png</code>
+          </div>
+        </div>
+      </section>
+
       <!-- Quick Usage -->
       <section id="usage" class="denla-card p-8 space-y-4">
         <h2 class="text-2xl font-bold text-denla-navy">Quick CDN Integration</h2>
         <div class="denla-divider"></div>
-        <pre class="bg-slate-900 text-slate-100 rounded-2xl p-5 text-xs sm:text-sm overflow-x-auto"><code>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;
-&lt;script src="https://denlagroup-theme.pages.dev/denla-tailwind-cdn.js"&gt;&lt;/script&gt;
-&lt;link rel="stylesheet" href="https://denlagroup-theme.pages.dev/denla-theme.css"&gt;</code></pre>
+        <pre class="bg-slate-900 text-slate-100 rounded-2xl p-5 text-xs sm:text-sm overflow-x-auto"><code>&lt;link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/vicshukornpa/DenlaGroup-Theme@v1.1.0/dist/assets/dbs-favicon.png"&gt;
+&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/gh/vicshukornpa/DenlaGroup-Theme@v1.1.0/dist/denla-tailwind-cdn.js"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vicshukornpa/DenlaGroup-Theme@v1.1.0/dist/denla-theme.css"&gt;</code></pre>
       </section>
     </main>
   </div>
 
   <footer class="denla-footer py-8 mt-12">
-    <div class="max-w-7xl mx-auto px-4 text-center text-sm text-slate-300">
-      DenlaGroup-Theme v1.0.0 — Centralized Frontend Design System
+    <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-center gap-3 text-sm text-slate-300">
+      <img src="./assets/denla-group-logo.png" alt="Denla Group Logo" class="denla-logo-white h-8">
+      <span class="hidden sm:inline text-white/25">|</span>
+      <span>DenlaGroup-Theme v1.1.0 — Centralized Frontend Design System</span>
     </div>
   </footer>
 </body>

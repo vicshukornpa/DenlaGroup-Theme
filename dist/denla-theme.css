@@ -222,3 +222,20 @@ body.denla-theme {
   background-color: var(--denla-gold);
   border-radius: var(--denla-radius-pill);
 }
+
+/* =========================================================
+   8. Brand Logos
+   ========================================================= */
+.denla-logo {
+  height: 2.75rem;
+  width: auto;
+  object-fit: contain;
+}
+
+.denla-logo-white {
+  height: 2.5rem;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  opacity: 0.92;
+}

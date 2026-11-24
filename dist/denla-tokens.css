@@ -62,4 +62,8 @@
   /* Layout */
   --denla-max-width: 80rem;
   --denla-header-height: 5rem;
+
+  /* Official Brand Assets */
+  --denla-logo-url: url('https://cdn.jsdelivr.net/gh/vicshukornpa/DenlaGroup-Theme@v1.1.0/dist/assets/denla-group-logo.png');
+  --dbs-favicon-url: url('https://cdn.jsdelivr.net/gh/vicshukornpa/DenlaGroup-Theme@v1.1.0/dist/assets/dbs-favicon.png');
 }

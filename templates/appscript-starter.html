@@ -4,16 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Denla Group — Starter App</title>
+  <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/vicshukornpa/DenlaGroup-Theme@v1.1.0/dist/assets/dbs-favicon.png">
+  <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/vicshukornpa/DenlaGroup-Theme@v1.1.0/dist/assets/dbs-favicon-192.png">
 
   <!--
-    DenlaGroup-Theme CDN Setup
-    Replace BASE_URL with your Cloudflare Pages/Worker URL or jsDelivr GitHub URL:
-      - Cloudflare: https://denlagroup-theme.pages.dev
-      - GitHub CDN: https://cdn.jsdelivr.net/gh/vicshukornpa/DenlaGroup-Theme@v1.0.0/dist
+    DenlaGroup-Theme CDN Setup (v1.1.0)
+    For Google Apps Script Code.gs doGet():
+      .setFaviconUrl('https://cdn.jsdelivr.net/gh/vicshukornpa/DenlaGroup-Theme@v1.1.0/dist/assets/dbs-favicon.png')
+    Note for GAS HtmlService: Avoid '//' inside <script> template literals (`...`), as GAS strips '//' comments.
   -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://denlagroup-theme.pages.dev/denla-tailwind-cdn.js"></script>
-  <link rel="stylesheet" href="https://denlagroup-theme.pages.dev/denla-theme.css">
+  <script src="https://cdn.jsdelivr.net/gh/vicshukornpa/DenlaGroup-Theme@v1.1.0/dist/denla-tailwind-cdn.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vicshukornpa/DenlaGroup-Theme@v1.1.0/dist/denla-theme.css">
 </head>
 <body class="denla-theme min-h-screen flex flex-col justify-between">
   <div>
@@ -21,10 +23,8 @@
     <header class="denla-header">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-20">
-          <div class="flex items-center gap-3 cursor-pointer" onclick="switchTab('home')">
-            <div class="h-10 w-10 rounded-xl bg-denla-navy text-denla-goldlight flex items-center justify-center font-bold text-lg shadow-sm">
-              DG
-            </div>
+          <div class="flex items-center gap-3.5 cursor-pointer" onclick="switchTab('home')">
+            <img src="https://cdn.jsdelivr.net/gh/vicshukornpa/DenlaGroup-Theme@v1.1.0/dist/assets/denla-group-logo.png" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1_jYTlG_Bc98cSAlgydBVHY6u4sTA8X39';" alt="Denla Group Logo" class="h-9 sm:h-11 w-auto object-contain">
             <div class="hidden sm:flex flex-col justify-center border-l border-slate-200 pl-3.5">
               <h1 class="text-lg font-bold text-denla-navy leading-tight tracking-tight">Denla Group Portal</h1>
               <span class="text-[9px] font-bold text-denla-gold uppercase tracking-widest mt-0.5">BY DENLA GROUP</span>
@@ -108,8 +108,10 @@
 
   <!-- Footer -->
   <footer class="denla-footer py-10 mt-12">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-slate-300">
-      &copy; Denla Group. All rights reserved.
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-center gap-3 text-sm text-slate-300">
+      <img src="https://cdn.jsdelivr.net/gh/vicshukornpa/DenlaGroup-Theme@v1.1.0/dist/assets/denla-group-logo.png" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1_jYTlG_Bc98cSAlgydBVHY6u4sTA8X39';" alt="Denla Group Logo" class="denla-logo-white h-9">
+      <span class="hidden sm:inline text-white/25">|</span>
+      <span>&copy; Denla Group. All rights reserved.</span>
     </div>
   </footer>
 

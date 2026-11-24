@@ -1,6 +1,6 @@
 {
   "name": "denlagroup-theme",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Centralized Frontend Design System & Theme for Denla Group web applications (Apps Script, Static HTML, React, Next.js, Vue, Vite)",
   "main": "./packages/tailwind-preset.js",
   "exports": {

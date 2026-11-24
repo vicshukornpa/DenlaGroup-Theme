@@ -2,8 +2,41 @@
   "$schema": "https://design-tokens.github.io/community-group/format/",
   "meta": {
     "name": "DenlaGroup-Theme",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Centralized Frontend Design System for Denla Group (DBS & Denla Group web applications)"
+  },
+  "assets": {
+    "denlaGroupLogo": {
+      "value": "https://cdn.jsdelivr.net/gh/vicshukornpa/DenlaGroup-Theme@v1.1.0/dist/assets/denla-group-logo.png",
+      "fallback": "https://lh3.googleusercontent.com/d/1_jYTlG_Bc98cSAlgydBVHY6u4sTA8X39",
+      "localPath": "./assets/denla-group-logo.png",
+      "description": "Official Denla Group emblem/icon for header, login cards, and inverted white footer"
+    },
+    "dbsFaviconPng": {
+      "value": "https://cdn.jsdelivr.net/gh/vicshukornpa/DenlaGroup-Theme@v1.1.0/dist/assets/dbs-favicon.png",
+      "localPath": "./assets/dbs-favicon.png",
+      "description": "Denla British School 128x128 RGBA PNG favicon (compatible with Google Apps Script setFaviconUrl and HTML link rel=icon)"
+    },
+    "dbsFavicon192Png": {
+      "value": "https://cdn.jsdelivr.net/gh/vicshukornpa/DenlaGroup-Theme@v1.1.0/dist/assets/dbs-favicon-192.png",
+      "localPath": "./assets/dbs-favicon-192.png",
+      "description": "Denla British School 192x192 RGBA PNG touch/app icon"
+    },
+    "dbsFaviconWebp": {
+      "value": "https://www.dbsbangkok.ac.th/wp-content/uploads/2025/07/cropped-logo-32x32.webp",
+      "localPath": "./assets/dbs-favicon-32.webp",
+      "description": "Denla British School 32x32 WebP browser favicon from dbsbangkok.ac.th"
+    },
+    "dbsLogoDarkSvg": {
+      "value": "https://cdn.jsdelivr.net/gh/vicshukornpa/DenlaGroup-Theme@v1.1.0/dist/assets/dbs-logo-dark.svg",
+      "localPath": "./assets/dbs-logo-dark.svg",
+      "description": "Denla British School horizontal logo (dark text for light backgrounds)"
+    },
+    "dbsLogoWhiteSvg": {
+      "value": "https://cdn.jsdelivr.net/gh/vicshukornpa/DenlaGroup-Theme@v1.1.0/dist/assets/dbs-logo-white.svg",
+      "localPath": "./assets/dbs-logo-white.svg",
+      "description": "Denla British School horizontal logo (white text for dark backgrounds)"
+    }
   },
   "color": {
     "brand": {

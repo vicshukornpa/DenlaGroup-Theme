@@ -66,7 +66,19 @@
 
 ---
 
-## 5. Retrofitting Existing Web Apps (การนำไปปรับเข้ากับเว็บเก่า)
+## 5. Brand Icons & Favicon Standard (โลโก้และ Favicon มาตรฐาน)
+
+ทุกเว็บแอปพลิเคชันที่ใช้ **DenlaGroup-Theme** ให้ใช้ไฟล์โลโก้และ Favicon มาตรฐานจาก `dist/assets/` (หรือผ่าน jsDelivr CDN `@v1.1.0`) แทนการสร้างกล่องตัวอักษรย่อหรือไอคอนทั่วไป:
+
+| รายการ | CDN URL (`@v1.1.0`) | การใช้งานมาตรฐาน |
+| :--- | :--- | :--- |
+| **Denla Group Icon / Logo** | `https://cdn.jsdelivr.net/gh/vicshukornpa/DenlaGroup-Theme@v1.1.0/dist/assets/denla-group-logo.png` *(Fallback: `https://lh3.googleusercontent.com/d/1_jYTlG_Bc98cSAlgydBVHY6u4sTA8X39`)* | มุมซ้ายบนของ `.denla-header` (`class="h-9 sm:h-11 w-auto object-contain"`), หน้า Login Card, และใน `.denla-footer` โดยใส่คลาส `.denla-logo-white` (`brightness-0 invert opacity-90`) |
+| **Denla British School (DBS) Favicon (PNG)** | `https://cdn.jsdelivr.net/gh/vicshukornpa/DenlaGroup-Theme@v1.1.0/dist/assets/dbs-favicon.png` *(192px: `dbs-favicon-192.png`)* | ใช้ใน `<link rel="icon" type="image/png" href="...">` และใน Google Apps Script `HtmlService`: `.setFaviconUrl('https://cdn.jsdelivr.net/gh/vicshukornpa/DenlaGroup-Theme@v1.1.0/dist/assets/dbs-favicon.png')` *(ต้องเป็น `.png` เท่านั้น GAS จึงจะไม่เกิด Error)* |
+| **DBS Horizontal Logos (SVG)** | `.../dist/assets/dbs-logo-dark.svg` และ `.../dist/assets/dbs-logo-white.svg` | โลโก้แนวนอนของ Denla British School สำหรับพื้นสว่างและพื้นเข้ม |
+
+---
+
+## 6. Retrofitting Existing Web Apps (การนำไปปรับเข้ากับเว็บเก่า)
 
 1. **เริ่มต้นแบบปลอดภัย 100% (Zero Breaking Changes)**: โหลดเฉพาะ `denla-tokens.css` ก่อน เพื่อใช้ CSS Variables (`var(--denla-navy)`, `var(--denla-gold)`, `var(--denla-font-sans)`) ในส่วนที่ต้องการเปลี่ยนทีละหน้า
 2. **อัปเกรดทีละ Component**: โหลด `denla-theme.css` แล้วเติมคลาส `.denla-header`, `.denla-card`, `.denla-btn-primary`, `.denla-input` เฉพาะจุดที่ต้องการปรับ โดยไม่ต้องใส่ `.denla-theme` ที่ `<body>` จนกว่าจะพร้อมเปลี่ยนทั้งเว็บ

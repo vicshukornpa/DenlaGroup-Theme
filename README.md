@@ -15,7 +15,13 @@
 ```text
 DenlaGroup-Theme/
 ├── dist/                        # ไฟล์พร้อมใช้งาน / Deploy ขึ้น Cloudflare Pages หรือ CDN
-│   ├── index.html               # หน้า Showcase ดูตัวอย่างสี ฟอนต์ และ Component
+│   ├── assets/                  # โลโก้ Denla Group และ Favicon มาตรฐาน Denla British School (PNG/WebP/SVG)
+│   │   ├── denla-group-logo.png # ไอคอน/โลโก้หลัก Denla Group (Navbar, Login, Footer)
+│   │   ├── dbs-favicon.png      # Favicon ของ Denla British School (128x128 PNG รองรับ GAS setFaviconUrl)
+│   │   ├── dbs-favicon-192.png  # Apple Touch / App Icon (192x192 PNG)
+│   │   ├── dbs-logo-dark.svg    # โลโก้แนวนอน DBS สำหรับพื้นหลังสว่าง
+│   │   └── dbs-logo-white.svg   # โลโก้แนวนอน DBS สำหรับพื้นหลังสีเข้ม
+│   ├── index.html               # หน้า Showcase ดูตัวอย่างสี ฟอนต์ โลโก้ และ Component
 │   ├── denla-tokens.css         # CSS Variables (:root) + Google Font Prompt (ปลอดภัย 100% สำหรับเว็บเก่า)
 │   ├── denla-theme.css          # Stylesheet หลัก + Component classes (.denla-*)
 │   ├── denla-tailwind-cdn.js    # Config สำหรับ Tailwind CDN (Apps Script / Static HTML)
